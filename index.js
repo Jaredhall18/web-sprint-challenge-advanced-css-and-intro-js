@@ -249,9 +249,9 @@ function get20s(array) {
   let newArray = [];
   for (let i = 0; i < array.length; i++){
     let yearConversion = parseInt(array[i].years.split("-"), 10);
-   if( yearConversion >= 1900 && yearConversion <= 2000){
+    if( yearConversion >= 1900 && yearConversion <= 2000){
      newArray.push(array[i].name);
-   }
+    }
   }
   return newArray;
 }
