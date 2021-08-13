@@ -13,12 +13,20 @@ figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,  
 time, mark, audio, video {  
 margin: 0;  
-padding: 0;  
-border: 0;  
+padding: 0;    
 font-size: 100%;  
 font: inherit;  
 vertical-align: baseline;  
 }
+
+*{
+    box-sizing: border-box; /*when I give an item a width I want padding and margin to be applied within that width not in addition to it*/
+    padding:0;
+    margin:0;
+    max-width:100%;
+    border:1px solid grey;
+}
+
 /*GENERAL STYLES*/
 html{
     font-size:62.5%;
@@ -137,29 +145,52 @@ button:hover{
 
 /*Mobile View Design */
 @media (max-width: 500px){
+    nav{
+        margin-top:20% 0;
+    }
+    
     nav a{
         margin-left:5%;
         margin-right:5%;
+        font-size: 2rem;
 
    }
    
     .title-container div {
        height:35vh;
        width: 100%;
+       margin-bottom: 1%;
    }
+   .title-container div h1{
+       font-size:4rem;
+       line-height: 1;
+       margin-bottom: 1%;
+   }
+   .title-container hr{
+    width:100%;
+}
 
    .artists-container{
        flex-direction: column;
        align-items: center;
-       width: 100%;
+       margin-top:2%;
+       margin-bottom: 20%;
+       margin-right: 10%;
+       margin-left:10%;
+
    }
    .artist{
-       width: 60%;
+       width: 75%;
    }
    .artist img {
-        height: 30rem;
+        height: 17rem;
+        width:75%;
+   }
+   .artist a{
+       font-size:1.8rem;
    }
    .artist .bio{
        font-size:1.3rem;
+       margin: 4% 0;
    }
 }
