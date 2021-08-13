@@ -246,12 +246,17 @@ If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 // Hint - Look up the .split() method
 
 function get20s(array) {
-  let artistName = [];
+  let newArray = [];
   for (let i = 0; i < array.length; i++){
-
+    let yearConversion = parseInt(array[i].years.split("-"), 10);
+   if( yearConversion >= 1900 && yearConversion <= 2000){
+     newArray.push(array[i].name);
+   }
   }
+  return newArray;
 }
 
+//split the string by words, then if word 1 > 1900 && word 3 <2000 .push arrayi to artistname
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
