@@ -23,7 +23,7 @@ Commit your code regularly and meaningfully.
 Please answer the following questions below, you may edit the readme file to include your answers below the question.
 
 1. How would you describe acessibility on the web to someone new to programming?
-Accessibility on the web means that web pages and applications are designed in a way that they can be accessed and read by users who may have disibilities.
+Accessibility on the web means that web pages and applications are designed in a way that they can be accessed and read by users who may have disabilities.
 
 2. Talk about 3 different things you can do to ensure your website is accessible. 
 First thing you can do is write your HTML using Semantic Tags. A significant % of the population is colorblind, so choosing colors with care and even adding icons to indicate if a form needs to be filled helps a lot! The third is to make sure you have good alt text describing what your images are.

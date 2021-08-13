@@ -134,3 +134,17 @@ button:hover{
 .artist img{
     width:100%;
 }
+
+/*Mobile View Design */
+@media (max-width: 500px){
+    nav a{
+        margin-left:5%;
+        margin-right:5%;
+
+   }
+   
+    .title-container div {
+       height:35vh;
+       width: 100%;
+   }
+}
