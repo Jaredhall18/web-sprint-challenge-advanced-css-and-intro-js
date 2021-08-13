@@ -19,13 +19,7 @@ font: inherit;
 vertical-align: baseline;  
 }
 
-*{
-    box-sizing: border-box; /*when I give an item a width I want padding and margin to be applied within that width not in addition to it*/
-    padding:0;
-    margin:0;
-    max-width:100%;
-    border:1px solid grey;
-}
+
 
 /*GENERAL STYLES*/
 html{
@@ -148,16 +142,13 @@ button:hover{
     nav{
         margin-top:20% 0;
     }
-    
     nav a{
         margin-left:5%;
         margin-right:5%;
         font-size: 2rem;
-
    }
-   
     .title-container div {
-       height:35vh;
+       height:45vh;
        width: 100%;
        margin-bottom: 1%;
    }
@@ -169,15 +160,13 @@ button:hover{
    .title-container hr{
     width:100%;
 }
-
    .artists-container{
        flex-direction: column;
        align-items: center;
        margin-top:2%;
-       margin-bottom: 20%;
-       margin-right: 10%;
+       margin-bottom:20%;
+       margin-right:10%;
        margin-left:10%;
-
    }
    .artist{
        width: 75%;
@@ -185,6 +174,9 @@ button:hover{
    .artist img {
         height: 17rem;
         width:75%;
+        margin-top:5%;
+        
+        margin-bottom:5%;
    }
    .artist a{
        font-size:1.8rem;
